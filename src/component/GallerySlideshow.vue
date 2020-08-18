@@ -33,6 +33,7 @@
         >
         <slot></slot>
       </div>
+      <div v-if="alt" class="vgs__container__img__title">{{ alt }}</div>
       <button
         v-if="isMultiple"
         type="button"
@@ -318,6 +319,14 @@ $screen-md-max: ($screen-lg - 1);
       width: 100%;
       height: 100%;
       object-fit: contain;
+      &__title {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: #f2f2f2;
+        background-color: #ffffff1f;
+        padding: 2px 4px;
+      }
     }
   }
 }
