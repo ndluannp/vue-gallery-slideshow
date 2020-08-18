@@ -298,11 +298,10 @@ $screen-md-max: ($screen-lg - 1);
     cursor: pointer;
     overflow: hidden;
     max-width: 100vh;
-    margin: 0.5rem auto 0;
+    margin: 4rem auto 0;
     left: 0.5rem;
     right: 0.5rem;
-    height: 60vh;
-    border-radius: $radius-large;
+    height: 70vh;
     background-color: $black;
     @include respond-to(xs) {
       width: 100%;
@@ -357,6 +356,7 @@ $screen-md-max: ($screen-lg - 1);
       cursor: pointer;
       opacity: 0.6;
       border-radius: $radius-medium;
+      border: 2px solid #fff;
     }
     &__img--active {
       width: 100px;
